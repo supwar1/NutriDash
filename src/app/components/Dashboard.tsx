@@ -54,10 +54,10 @@ const getUserCartoonCharacter = (age: number, gender: string) => {
     const genderKey = gender === '男' ? 'boy' : 'girl';
 
     // 如果没有对应的图片，使用默认图片
-    // return CARTOON_CHARACTERS[genderKey]?.[ageGroup] || "/images/cartoon-default.jpg";
+    // return CARTOON_CHARACTERS[genderKey]?.[ageGroup] || "/images/cartoon-default.png";
 
     // 现在只使用默认图片
-    return '/images/cartoon-default.jpg';
+    return '/images/cartoon-default.png';
 };
 
 interface DashboardProps {
@@ -110,66 +110,60 @@ const Dashboard: React.FC<DashboardProps> = ({ userData, scoreData, mealData, cu
                 <div className={styles.userCard}>
                     <div className={styles.userCardHeader}>
                         <h2>{userData.name}的营养仪表板</h2>
-                        <div className={styles.userAgeTag}>{userData.age}岁</div>
+                        <div className={styles.userAgeTag}>
+                            {userData.age}岁
+                        </div>
                     </div>
-
+                    
                     <div className={styles.userCardContent}>
                         <div className={styles.userCartoonContainer}>
-                            <div className={styles.cartoonImageWrapper}>
-                                <img
-                                    src={cartoonCharacter}
-                                    alt={`${userData.name}的卡通形象`}
-                                    className={styles.cartoonImage}
-                                    onError={e => {
-                                        // 如果图片加载失败，显示默认图片
-                                        e.currentTarget.src = '/images/cartoon-default.jpg';
-                                    }}
-                                />
-                            </div>
+                            <img 
+                                src={cartoonCharacter} 
+                                alt={`${userData.name}的卡通形象`} 
+                                className={styles.cartoonImage}
+                                onError={(e) => {
+                                    // 如果图片加载失败，显示默认图片
+                                    e.currentTarget.src = "/images/cartoon-default.jpg";
+                                }}
+                            />
                         </div>
-
+                        
                         <div className={styles.userDetails}>
                             <div className={styles.userDetailItem}>
                                 <span className={styles.detailIcon}>📏</span>
                                 <span className={styles.detailLabel}>身高:</span>
                                 <span className={styles.detailValue}>{userData.height} cm</span>
                             </div>
-
+                            
                             <div className={styles.userDetailItem}>
                                 <span className={styles.detailIcon}>⚖️</span>
                                 <span className={styles.detailLabel}>体重:</span>
                                 <span className={styles.detailValue}>{userData.weight} kg</span>
                             </div>
-
+                            
                             <div className={styles.userDetailItem}>
                                 <span className={styles.detailIcon}>🎯</span>
                                 <span className={styles.detailLabel}>目标:</span>
                                 <span className={styles.detailValue}>{userData.goal}</span>
                             </div>
-
+                            
                             <div className={styles.userDetailItem}>
                                 <span className={styles.detailIcon}>🏃</span>
                                 <span className={styles.detailLabel}>活动水平:</span>
                                 <span className={styles.detailValue}>{userData.activityLevel}</span>
                             </div>
-
+                            
                             <div className={styles.userDetailItem}>
                                 <span className={styles.detailIcon}>⚠️</span>
                                 <span className={styles.detailLabel}>过敏源:</span>
                                 <span className={styles.detailValue}>
                                     {userData.allergies.length > 0 ? (
                                         <div className={styles.allergyTags}>
-                                            {userData.allergies.map(
-                                                (allergy: string, index: number) => (
-                                                    <span key={index} className={styles.allergyTag}>
-                                                        {allergy}
-                                                    </span>
-                                                )
-                                            )}
+                                            {userData.allergies.map((allergy: string, index: number) => (
+                                                <span key={index} className={styles.allergyTag}>{allergy}</span>
+                                            ))}
                                         </div>
-                                    ) : (
-                                        '无'
-                                    )}
+                                    ) : '无'}
                                 </span>
                             </div>
                         </div>

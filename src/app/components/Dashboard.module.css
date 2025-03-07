@@ -56,6 +56,11 @@
     position: relative;
 }
 
+.userCard {
+    display: flex;
+    flex-direction: column;
+}
+
 .userCard:hover,
 .scoreCard:hover {
     transform: translateY(-5px);
@@ -66,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
     border-bottom: 2px solid var(--primary-light);
 }
@@ -91,38 +96,40 @@
 }
 
 .userCardContent {
+    margin-top: 1.5rem;
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .userCartoonContainer {
-    flex: 0 0 120px;
+    flex: 0 0 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-right: 1rem;
 }
 
 .cartoonImageWrapper {
-    width: 120px;
-    height: 180px;
+    width: 160px;
+    height: 220px;
     overflow: hidden;
-    background-color: rgba(var(--primary-rgb), 0.05);
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--primary-light);
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.2);
-    transition:
-        transform var(--transition-speed) ease,
-        box-shadow var(--transition-speed) ease;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    transition: transform var(--transition-speed) ease;
+    position: relative;
+    z-index: 2;
 }
 
 .cartoonImageWrapper:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3);
 }
 
 .cartoonImage {
@@ -131,6 +138,7 @@
     object-fit: contain;
     object-position: center bottom;
     transition: transform var(--transition-speed) ease;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
 }
 
 .cartoonImageWrapper:hover .cartoonImage {
@@ -142,18 +150,29 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    background-color: rgba(var(--primary-rgb), 0.03);
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 1;
 }
 
 .userDetailItem {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transition: transform var(--transition-speed) ease;
+}
+
+.userDetailItem:hover {
+    transform: translateX(5px);
 }
 
 .detailIcon {
     font-size: 1.25rem;
     width: 24px;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .detailLabel {
@@ -711,33 +730,33 @@
     .userInfoContainer {
         grid-template-columns: 1fr;
     }
-
+    
     .userCardContent {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .userCartoonContainer {
+        margin-right: 0;
         margin-bottom: 1.5rem;
     }
-
-    .cartoonImageWrapper {
-        width: 150px;
-        height: 220px;
+    
+    .userDetails {
+        width: 100%;
     }
-
+    
     .chartsContainer {
         grid-template-columns: 1fr;
     }
-
+    
     .nutritionGrid {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .mealTimingGrid {
         grid-template-columns: 1fr;
     }
-
+    
     .changesContainer {
         grid-template-columns: 1fr;
     }
@@ -747,13 +766,13 @@
     .mealCards {
         grid-template-columns: 1fr;
     }
-
+    
     .nutritionGrid {
         grid-template-columns: 1fr;
     }
-
+    
     .cartoonImageWrapper {
-        width: 130px;
+        width: 140px;
         height: 200px;
     }
 }
