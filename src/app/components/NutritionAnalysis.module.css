@@ -1,0 +1,294 @@
+.analysisContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.sectionTitle {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.analysisGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.radarChartSection, .recommendationsSection {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-speed) ease;
+}
+
+.radarChartSection:hover, .recommendationsSection:hover {
+  transform: translateY(-5px);
+}
+
+.radarChartSection h3, .recommendationsSection h3, 
+.restrictionsSection h3, .nutritionComparisonSection h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.radarChartContainer {
+  height: 400px;
+  margin: 0 auto;
+}
+
+.recommendationsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendationItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.recommendationItem:hover {
+  background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+.recommendationItem:last-child {
+  border-bottom: none;
+}
+
+.recommendationLabel {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.recommendationValue {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.tipsTitle {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+}
+
+.tipsList {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.tipsList li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.tipsList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.restrictionsSection {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.allergensInfo, .dietaryRestrictionsInfo {
+  margin-bottom: 1.5rem;
+}
+
+.allergensInfo h4, .dietaryRestrictionsInfo h4 {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.allergenItem, .restrictionItem {
+  background-color: rgba(var(--primary-rgb), 0.03);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--primary-color);
+  transition: transform var(--transition-speed) ease;
+}
+
+.allergenItem:hover, .restrictionItem:hover {
+  transform: translateX(5px);
+}
+
+.allergenItem h5, .restrictionItem h5 {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.allergenItem p, .restrictionItem p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.allergenLabel, .restrictionLabel {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.restrictionValue {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.nutritionComparisonSection {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.comparisonHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+}
+
+.comparisonHeader div {
+  padding: 0.5rem;
+}
+
+.comparisonRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.comparisonRow:hover {
+  background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+.comparisonRow div {
+  padding: 0.5rem;
+}
+
+.comparisonRow:last-child {
+  border-bottom: none;
+}
+
+.good {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.low {
+  color: var(--warning-color);
+  font-weight: 600;
+}
+
+.high, .slightlyHigh {
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.slightlyHigh {
+  color: var(--warning-color);
+}
+
+.neutral {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .analysisGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .comparisonHeader, .comparisonRow {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  
+  .comparisonHeader div:nth-child(3),
+  .comparisonRow div:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .comparisonHeader, .comparisonRow {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .comparisonHeader div,
+  .comparisonRow div {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  
+  .comparisonHeader div:first-child,
+  .comparisonRow div:first-child {
+    grid-column: 1 / -1;
+    border-bottom: 1px dashed var(--border-color);
+    margin-bottom: 0.5rem;
+  }
+} 

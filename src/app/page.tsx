@@ -1,95 +1,128 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import React, { useState } from 'react';
+import Dashboard from './components/Dashboard';
+import NutritionAnalysis from './components/NutritionAnalysis';
+import styles from './page.module.css';
+
+// 导入数据
+import nutritionScores from '../../data/nutrition_scores.json';
+import users from '../../data/users.json';
+import mealRecords from '../../data/meal_records.json';
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [selectedUser, setSelectedUser] = useState(1); // 默认选择小明
+  const [currentDate, setCurrentDate] = useState('2023-09-08'); // 假设当前日期是9月8日
+  const [activeTab, setActiveTab] = useState('dashboard'); // 默认显示仪表板
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  // 查找用户数据
+  const userData = users.find(u => u.id === selectedUser);
+  
+  // 查找用户的营养评分数据
+  const userScores = nutritionScores.find(s => s.userId === selectedUser);
+  
+  // 查找用户的餐食记录
+  const userMeals = mealRecords.find(m => m.userId === selectedUser);
+  
+  // 格式化日期为YYYY-MM-DD
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0];
+  };
+
+  // 处理用户选择变化
+  const handleUserChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedUser(Number(e.target.value));
+  };
+
+  // 处理日期选择变化
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCurrentDate(e.target.value);
+  };
+
+  // 处理标签切换
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
+  };
+
+  if (!userData || !userScores || !userMeals) {
+    return (
+      <div className={styles.main}>
+        <div className={styles.loading}>
+          <div className={styles.loadingSpinner}></div>
+          <span>加载数据中...</span>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+    );
+  }
+
+  return (
+    <main className={styles.main}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>儿童营养分析仪表板</h1>
+        <div className={styles.controls}>
+          <div className={styles.userSelector}>
+            <label htmlFor="user-select">选择用户</label>
+            <select 
+              id="user-select" 
+              className={styles.select}
+              value={selectedUser} 
+              onChange={handleUserChange}
+            >
+              {users.map(user => (
+                <option key={user.id} value={user.id}>
+                  {user.name} ({user.age}岁)
+                </option>
+              ))}
+            </select>
+          </div>
+          
+          <div className={styles.dateSelector}>
+            <label className={styles.dateLabel}>选择日期</label>
+            <input 
+              type="date" 
+              className={styles.dateInput}
+              value={currentDate} 
+              onChange={handleDateChange}
+              min="2023-09-01" 
+              max="2023-09-08"
+            />
+          </div>
+        </div>
+      </header>
+
+      <div className={styles.tabs}>
+        <button 
+          className={`${styles.tabButton} ${activeTab === 'dashboard' ? styles.activeTab : ''}`}
+          onClick={() => handleTabChange('dashboard')}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          仪表板概览
+        </button>
+        <button 
+          className={`${styles.tabButton} ${activeTab === 'analysis' ? styles.activeTab : ''}`}
+          onClick={() => handleTabChange('analysis')}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          详细营养分析
+        </button>
+      </div>
+
+      <div className={styles.content}>
+        {activeTab === 'dashboard' ? (
+          <Dashboard 
+            userData={userData} 
+            scoreData={userScores} 
+            mealData={userMeals} 
+            currentDate={currentDate}
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+        ) : (
+          <NutritionAnalysis 
+            userData={userData} 
+            scoreData={userScores} 
+            mealData={userMeals} 
+            currentDate={currentDate}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        )}
+      </div>
+    </main>
   );
 }

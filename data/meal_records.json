@@ -1,0 +1,661 @@
+[
+  {
+    "userId": 1,
+    "name": "小明",
+    "age": 5,
+    "records": [
+      {
+        "date": "2023-09-01",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:30",
+            "foods": [
+              {"foodId": 12, "name": "燕麦粥", "quantity": 1, "unit": "碗"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:00",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.8, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.5, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.5, "unit": "份"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "15:30",
+            "foods": [
+              {"foodId": 21, "name": "鱼形饼干", "quantity": 1, "unit": "份"},
+              {"foodId": 24, "name": "果汁盒", "quantity": 1, "unit": "盒"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:30",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 15, "name": "饺子", "quantity": 6, "unit": "个"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.3, "unit": "个"},
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 800,
+          "otherDrinks": 350
+        },
+        "totalNutrition": {
+          "calories": 1680,
+          "protein": 65,
+          "fat": 40,
+          "carbs": 240,
+          "fiber": 15,
+          "sugar": 70,
+          "sodium": 1200
+        },
+        "notes": "比平时多吃了一些饺子",
+        "mood": "开心"
+      },
+      {
+        "date": "2023-09-02",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:45",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 1, "unit": "片"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 1, "unit": "个"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:15",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.5, "unit": "份"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.3, "unit": "个"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "15:45",
+            "foods": [
+              {"foodId": 19, "name": "卡通饼干", "quantity": 0.5, "unit": "包"},
+              {"foodId": 24, "name": "果汁盒", "quantity": 1, "unit": "盒"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:45",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.6, "unit": "碗"},
+              {"foodId": 4, "name": "三文鱼", "quantity": 0.5, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.5, "unit": "份"},
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 750,
+          "otherDrinks": 400
+        },
+        "totalNutrition": {
+          "calories": 1550,
+          "protein": 60,
+          "fat": 38,
+          "carbs": 230,
+          "fiber": 14,
+          "sugar": 75,
+          "sodium": 1150
+        },
+        "notes": "今天吃了三文鱼，很喜欢",
+        "mood": "开心"
+      },
+      {
+        "date": "2023-09-03",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "08:00",
+            "foods": [
+              {"foodId": 12, "name": "燕麦粥", "quantity": 1, "unit": "碗"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"},
+              {"foodId": 8, "name": "牛奶", "quantity": 0.8, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:30",
+            "foods": [
+              {"foodId": 15, "name": "饺子", "quantity": 8, "unit": "个"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.4, "unit": "份"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "16:00",
+            "foods": [
+              {"foodId": 7, "name": "苹果", "quantity": 1, "unit": "个"},
+              {"foodId": 16, "name": "酸奶", "quantity": 0.5, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:30",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 5, "name": "豆腐", "quantity": 1, "unit": "块"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.5, "unit": "个"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 820,
+          "otherDrinks": 300
+        },
+        "totalNutrition": {
+          "calories": 1620,
+          "protein": 58,
+          "fat": 35,
+          "carbs": 250,
+          "fiber": 18,
+          "sugar": 65,
+          "sodium": 1300
+        },
+        "notes": "今天多吃了几个饺子",
+        "mood": "满足"
+      },
+      {
+        "date": "2023-09-04",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:30",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 1.5, "unit": "片"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 1, "unit": "个"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:00",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.8, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.6, "unit": "份"},
+              {"foodId": 13, "name": "红薯", "quantity": 0.5, "unit": "个"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "15:30",
+            "foods": [
+              {"foodId": 22, "name": "水果软糖", "quantity": 0.5, "unit": "包"},
+              {"foodId": 24, "name": "果汁盒", "quantity": 1, "unit": "盒"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:40",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.6, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.4, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.6, "unit": "份"},
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 700,
+          "otherDrinks": 350
+        },
+        "totalNutrition": {
+          "calories": 1580,
+          "protein": 68,
+          "fat": 36,
+          "carbs": 235,
+          "fiber": 16,
+          "sugar": 80,
+          "sodium": 1250
+        },
+        "notes": "今天吃了水果软糖作为特别奖励",
+        "mood": "兴奋"
+      },
+      {
+        "date": "2023-09-05",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:40",
+            "foods": [
+              {"foodId": 12, "name": "燕麦粥", "quantity": 1, "unit": "碗"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:10",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 4, "name": "三文鱼", "quantity": 0.4, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.5, "unit": "份"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "15:45",
+            "foods": [
+              {"foodId": 21, "name": "鱼形饼干", "quantity": 1, "unit": "份"},
+              {"foodId": 8, "name": "牛奶", "quantity": 0.5, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:30",
+            "foods": [
+              {"foodId": 15, "name": "饺子", "quantity": 7, "unit": "个"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.3, "unit": "个"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 780,
+          "otherDrinks": 320
+        },
+        "totalNutrition": {
+          "calories": 1600,
+          "protein": 62,
+          "fat": 42,
+          "carbs": 230,
+          "fiber": 15,
+          "sugar": 60,
+          "sodium": 1280
+        },
+        "notes": "今天胃口不错",
+        "mood": "平静"
+      },
+      {
+        "date": "2023-09-06",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:35",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 1, "unit": "片"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 1, "unit": "个"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:20",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.8, "unit": "碗"},
+              {"foodId": 5, "name": "豆腐", "quantity": 1, "unit": "块"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.4, "unit": "份"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "16:00",
+            "foods": [
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:50",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.6, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.5, "unit": "份"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.4, "unit": "个"},
+              {"foodId": 13, "name": "红薯", "quantity": 0.3, "unit": "个"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 850,
+          "otherDrinks": 280
+        },
+        "totalNutrition": {
+          "calories": 1520,
+          "protein": 59,
+          "fat": 34,
+          "carbs": 240,
+          "fiber": 17,
+          "sugar": 62,
+          "sodium": 1100
+        },
+        "notes": "今天吃了豆腐，不太喜欢",
+        "mood": "一般"
+      },
+      {
+        "date": "2023-09-07",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:50",
+            "foods": [
+              {"foodId": 12, "name": "燕麦粥", "quantity": 1, "unit": "碗"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:30",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.5, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.5, "unit": "份"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "15:40",
+            "foods": [
+              {"foodId": 19, "name": "卡通饼干", "quantity": 0.7, "unit": "包"},
+              {"foodId": 24, "name": "果汁盒", "quantity": 1, "unit": "盒"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:40",
+            "foods": [
+              {"foodId": 15, "name": "饺子", "quantity": 6, "unit": "个"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.3, "unit": "个"},
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 800,
+          "otherDrinks": 370
+        },
+        "totalNutrition": {
+          "calories": 1650,
+          "protein": 63,
+          "fat": 38,
+          "carbs": 245,
+          "fiber": 14,
+          "sugar": 78,
+          "sodium": 1350
+        },
+        "notes": "今天吃了很多卡通饼干",
+        "mood": "开心"
+      },
+      {
+        "date": "2023-09-08",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "08:00",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 1.5, "unit": "片"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 1, "unit": "个"},
+              {"foodId": 8, "name": "牛奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:15",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.8, "unit": "碗"},
+              {"foodId": 4, "name": "三文鱼", "quantity": 0.5, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.6, "unit": "份"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          },
+          {
+            "type": "点心",
+            "time": "16:00",
+            "foods": [
+              {"foodId": 21, "name": "鱼形饼干", "quantity": 0.8, "unit": "份"},
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:30",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 0.7, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.6, "unit": "份"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.4, "unit": "个"},
+              {"foodId": 7, "name": "苹果", "quantity": 0.5, "unit": "个"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 830,
+          "otherDrinks": 300
+        },
+        "totalNutrition": {
+          "calories": 1700,
+          "protein": 70,
+          "fat": 45,
+          "carbs": 235,
+          "fiber": 18,
+          "sugar": 65,
+          "sodium": 1200
+        },
+        "notes": "今天饮食很均衡",
+        "mood": "精力充沛"
+      }
+    ]
+  },
+  {
+    "userId": 5,
+    "name": "小强",
+    "age": 1,
+    "records": [
+      {
+        "date": "2023-09-01",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:00",
+            "foods": [
+              {"foodId": 25, "name": "婴儿米粉", "quantity": 1, "unit": "份"},
+              {"foodId": 8, "name": "牛奶", "quantity": 0.5, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "上午加餐",
+            "time": "10:00",
+            "foods": [
+              {"foodId": 26, "name": "婴儿果泥", "quantity": 1, "unit": "罐"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:00",
+            "foods": [
+              {"foodId": 25, "name": "婴儿米粉", "quantity": 0.8, "unit": "份"},
+              {"foodId": 27, "name": "蔬菜泥", "quantity": 1, "unit": "罐"}
+            ]
+          },
+          {
+            "type": "下午加餐",
+            "time": "15:00",
+            "foods": [
+              {"foodId": 26, "name": "婴儿果泥", "quantity": 0.8, "unit": "罐"},
+              {"foodId": 8, "name": "牛奶", "quantity": 0.5, "unit": "杯"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "18:00",
+            "foods": [
+              {"foodId": 25, "name": "婴儿米粉", "quantity": 0.8, "unit": "份"},
+              {"foodId": 27, "name": "蔬菜泥", "quantity": 0.5, "unit": "罐"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 500,
+          "otherDrinks": 300
+        },
+        "totalNutrition": {
+          "calories": 600,
+          "protein": 15,
+          "fat": 8,
+          "carbs": 110,
+          "fiber": 8,
+          "sugar": 30,
+          "sodium": 100
+        },
+        "notes": "今天的胃口很好",
+        "mood": "开心"
+      }
+    ]
+  },
+  {
+    "userId": 3,
+    "name": "小华",
+    "age": 13,
+    "records": [
+      {
+        "date": "2023-09-01",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "06:45",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 2, "unit": "片"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 2, "unit": "个"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:15",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 1.5, "unit": "碗"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 1, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 1, "unit": "份"},
+              {"foodId": 13, "name": "红薯", "quantity": 0.5, "unit": "个"}
+            ]
+          },
+          {
+            "type": "课间点心",
+            "time": "16:00",
+            "foods": [
+              {"foodId": 18, "name": "花生酱三明治", "quantity": 1, "unit": "个"},
+              {"foodId": 23, "name": "巧克力牛奶", "quantity": 1, "unit": "盒"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "19:00",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 1.2, "unit": "碗"},
+              {"foodId": 4, "name": "三文鱼", "quantity": 1, "unit": "份"},
+              {"foodId": 14, "name": "青椒", "quantity": 1, "unit": "个"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.8, "unit": "份"}
+            ]
+          },
+          {
+            "type": "夜宵",
+            "time": "21:30",
+            "foods": [
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"},
+              {"foodId": 7, "name": "苹果", "quantity": 1, "unit": "个"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 1500,
+          "otherDrinks": 400
+        },
+        "totalNutrition": {
+          "calories": 2500,
+          "protein": 120,
+          "fat": 70,
+          "carbs": 340,
+          "fiber": 25,
+          "sugar": 60,
+          "sodium": 1800
+        },
+        "notes": "运动后增加了一些食物摄入",
+        "mood": "精力充沛",
+        "physicalActivity": "篮球训练90分钟"
+      }
+    ]
+  },
+  {
+    "userId": 4,
+    "name": "小雪",
+    "age": 16,
+    "records": [
+      {
+        "date": "2023-09-01",
+        "meals": [
+          {
+            "type": "早餐",
+            "time": "07:00",
+            "foods": [
+              {"foodId": 12, "name": "燕麦粥", "quantity": 1, "unit": "碗"},
+              {"foodId": 9, "name": "鸡蛋", "quantity": 1, "unit": "个"},
+              {"foodId": 10, "name": "杏仁", "quantity": 0.5, "unit": "份"},
+              {"foodId": 7, "name": "苹果", "quantity": 1, "unit": "个"}
+            ]
+          },
+          {
+            "type": "午餐",
+            "time": "12:30",
+            "foods": [
+              {"foodId": 1, "name": "白米饭", "quantity": 1, "unit": "碗"},
+              {"foodId": 5, "name": "豆腐", "quantity": 1, "unit": "块"},
+              {"foodId": 3, "name": "鸡胸肉", "quantity": 0.8, "unit": "份"},
+              {"foodId": 6, "name": "西兰花", "quantity": 1, "unit": "份"}
+            ]
+          },
+          {
+            "type": "下午点心",
+            "time": "16:00",
+            "foods": [
+              {"foodId": 16, "name": "酸奶", "quantity": 1, "unit": "杯"},
+              {"foodId": 17, "name": "香蕉", "quantity": 1, "unit": "根"}
+            ]
+          },
+          {
+            "type": "晚餐",
+            "time": "19:00",
+            "foods": [
+              {"foodId": 2, "name": "全麦面包", "quantity": 2, "unit": "片"},
+              {"foodId": 4, "name": "三文鱼", "quantity": 1, "unit": "份"},
+              {"foodId": 14, "name": "青椒", "quantity": 0.5, "unit": "个"},
+              {"foodId": 6, "name": "西兰花", "quantity": 0.5, "unit": "份"}
+            ]
+          }
+        ],
+        "hydration": {
+          "water": 2000,
+          "otherDrinks": 300
+        },
+        "totalNutrition": {
+          "calories": 1900,
+          "protein": 105,
+          "fat": 65,
+          "carbs": 220,
+          "fiber": 30,
+          "sugar": 45,
+          "sodium": 1500
+        },
+        "notes": "今天保持饮食均衡",
+        "mood": "平静",
+        "physicalActivity": "慢跑30分钟"
+      }
+    ]
+  }
+] 

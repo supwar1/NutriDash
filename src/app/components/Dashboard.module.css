@@ -1,0 +1,314 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #4a6fa5;
+  margin: 0;
+}
+
+.userSelector {
+  display: flex;
+  align-items: center;
+}
+
+.userSelector label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.userSelector select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.userCard, .scoreCard {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.userCard:hover, .scoreCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.userCard h2, .scoreCard h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.userCard p {
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.userCard p:last-child {
+  margin-bottom: 0;
+}
+
+.scoreCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--primary-color) 0%, 
+    var(--primary-light) 50%, 
+    var(--accent-color) 100%
+  );
+  margin: 1.5rem auto;
+  position: relative;
+}
+
+.scoreCircle::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--card-background);
+}
+
+.scoreValue {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+.scoreFeedback {
+  margin-top: 1.5rem;
+  background-color: rgba(var(--primary-rgb), 0.05);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.scoreFeedback p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.scoreFeedback p:last-child {
+  margin-bottom: 0;
+}
+
+.chartsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chartCard {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-speed) ease;
+}
+
+.chartCard:hover {
+  transform: translateY(-5px);
+}
+
+.chartCard h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.mealSection {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.mealSection h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.mealCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.mealCard, .hydrationCard {
+  background-color: rgba(var(--primary-rgb), 0.03);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.mealCard h4, .hydrationCard h4 {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mealCard h4::before, .hydrationCard h4::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.mealCard ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.mealCard li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.mealCard li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-light);
+}
+
+.hydrationCard p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nutritionSummary {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.nutritionSummary h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.nutritionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.nutritionItem {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--primary-rgb), 0.03);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.nutritionItem:hover {
+  transform: translateY(-5px);
+}
+
+.nutritionItem span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.nutritionItem strong {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .userSelector {
+    margin-top: 15px;
+  }
+  
+  .userInfo {
+    grid-template-columns: 1fr;
+  }
+  
+  .chartsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .nutritionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .mealCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .nutritionGrid {
+    grid-template-columns: 1fr;
+  }
+} 
