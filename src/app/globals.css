@@ -1,116 +1,135 @@
 :root {
-  --primary-color: #4361ee;
-  --primary-light: #4895ef;
-  --secondary-color: #3f37c9;
-  --accent-color: #f72585;
-  --success-color: #4cc9f0;
-  --warning-color: #f8961e;
-  --danger-color: #f94144;
-  --background-color: #f8f9fa;
-  --card-background: #ffffff;
-  --text-primary: #212529;
-  --text-secondary: #6c757d;
-  --border-color: #e9ecef;
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --border-radius: 8px;
-  --transition-speed: 0.3s;
+    --primary-color: #4361ee;
+    --primary-light: #4895ef;
+    --primary-rgb: 67, 97, 238;
+    --secondary-color: #3f37c9;
+    --accent-color: #f72585;
+    --accent-rgb: 247, 37, 133;
+    --success-color: #4cc9f0;
+    --success-rgb: 76, 201, 240;
+    --warning-color: #f8961e;
+    --warning-rgb: 248, 150, 30;
+    --danger-color: #f94144;
+    --danger-rgb: 249, 65, 68;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --border-color: #e9ecef;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: #4cc9f0;
-    --primary-light: #4895ef;
-    --secondary-color: #3a0ca3;
-    --accent-color: #f72585;
-    --background-color: #121212;
-    --card-background: #1e1e1e;
-    --text-primary: #f8f9fa;
-    --text-secondary: #adb5bd;
-    --border-color: #2a2a2a;
-  }
+    :root {
+        --primary-color: #4cc9f0;
+        --primary-light: #4895ef;
+        --primary-rgb: 76, 201, 240;
+        --secondary-color: #3a0ca3;
+        --accent-color: #f72585;
+        --accent-rgb: 247, 37, 133;
+        --success-color: #4cc9f0;
+        --success-rgb: 76, 201, 240;
+        --warning-color: #f8961e;
+        --warning-rgb: 248, 150, 30;
+        --danger-color: #f94144;
+        --danger-rgb: 249, 65, 68;
+        --background-color: #121212;
+        --card-background: #1e1e1e;
+        --text-primary: #f8f9fa;
+        --text-secondary: #adb5bd;
+        --border-color: #2a2a2a;
+    }
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-primary);
-  line-height: 1.6;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    line-height: 1.6;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  transition: color var(--transition-speed) ease;
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
 }
 
 button {
-  cursor: pointer;
-  font-family: inherit;
+    cursor: pointer;
+    font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 /* 自定义滚动条 */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background-color);
-  border-radius: 4px;
+    background: var(--background-color);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-light);
-  border-radius: 4px;
+    background: var(--primary-light);
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+    background: var(--primary-color);
 }
 
 /* 响应式字体大小 */
 @media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
+    html {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
-  html {
-    font-size: 12px;
-  }
+    html {
+        font-size: 12px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+    html {
+        color-scheme: dark;
+    }
 }

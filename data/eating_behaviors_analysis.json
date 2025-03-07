@@ -1,0 +1,126 @@
+[
+    {
+        "userId": 1,
+        "name": "小明",
+        "age": 5,
+        "behaviorAnalysis": {
+            "period": "2023-09-01至2023-09-07",
+            "summary": "小明的饮食行为总体规律，但存在一些需要关注的习惯模式。",
+            "mealTimings": {
+                "breakfast": {
+                    "averageTime": "07:40",
+                    "consistency": "高",
+                    "skippedDays": 0,
+                    "comments": "早餐时间非常规律，从不跳过，有助于建立良好的饮食习惯"
+                },
+                "lunch": {
+                    "averageTime": "12:10",
+                    "consistency": "高",
+                    "skippedDays": 0,
+                    "comments": "午餐时间稳定，在学校食堂用餐"
+                },
+                "snacks": {
+                    "averageTime": "15:40",
+                    "consistency": "中",
+                    "skippedDays": 1,
+                    "comments": "点心时间相对固定，但9月5日没有记录点心摄入"
+                },
+                "dinner": {
+                    "averageTime": "18:35",
+                    "consistency": "高",
+                    "skippedDays": 0,
+                    "comments": "晚餐时间规律，通常在家中与家人共进晚餐"
+                }
+            },
+            "eatingHabits": {
+                "mealDuration": {
+                    "average": "25分钟",
+                    "comments": "用餐时间适中，但有时会因看动画片而延长"
+                },
+                "chewingPattern": {
+                    "rating": "需要改进",
+                    "comments": "进食速度偏快，需要鼓励慢慢咀嚼食物"
+                },
+                "distractions": {
+                    "common": ["看电视", "玩玩具"],
+                    "frequency": "中等",
+                    "comments": "晚餐时经常边看电视边吃饭，可能影响食物摄入感知"
+                },
+                "foodPreferences": {
+                    "favorites": ["鱼形饼干", "果汁", "鸡胸肉", "苹果"],
+                    "dislikes": ["青椒", "西兰花"],
+                    "comments": "对甜食和果汁有明显偏好，对部分蔬菜存在抵触"
+                },
+                "foodRejection": {
+                    "frequency": "低",
+                    "commonItems": ["西兰花"],
+                    "comments": "除了特定蔬菜外，通常愿意尝试大部分食物"
+                }
+            },
+            "socialEating": {
+                "familyMeals": {
+                    "frequency": "每天晚餐",
+                    "quality": "良好",
+                    "comments": "与家人共进晚餐，有良好的社交互动"
+                },
+                "schoolMeals": {
+                    "frequency": "每个工作日",
+                    "peerInfluence": "中等",
+                    "comments": "在学校受同伴影响，更愿意尝试一些新食物"
+                },
+                "specialOccasions": {
+                    "frequency": "偶尔",
+                    "lastEvent": "9月6日生日聚会",
+                    "comments": "特殊场合会摄入更多甜食和加工食品"
+                }
+            },
+            "emotionalEating": {
+                "observed": "偶尔",
+                "triggers": ["疲劳", "兴奋"],
+                "commonFoods": ["饼干", "果汁"],
+                "comments": "疲劳或特别兴奋时更倾向于要求甜食"
+            },
+            "hydrationBehavior": {
+                "waterConsumption": {
+                    "pattern": "不规律",
+                    "reminders": "需要",
+                    "comments": "需要提醒才会喝水，更喜欢有味道的饮料"
+                },
+                "beveragePreferences": {
+                    "favorites": ["果汁", "牛奶"],
+                    "comments": "对纯水接受度较低，偏好有味道的饮料"
+                }
+            },
+            "behavioralPatterns": {
+                "mealtime": {
+                    "cooperation": "良好",
+                    "independence": "中等",
+                    "comments": "能够独立进食，但有时需要帮助切食物"
+                },
+                "foodExploration": {
+                    "willingness": "中等",
+                    "comments": "对新食物有一定好奇心，但需要鼓励尝试"
+                },
+                "portionControl": {
+                    "awareness": "低",
+                    "comments": "对食物份量缺乏认知，有时会吃得过多或过少"
+                }
+            },
+            "weeklyChanges": {
+                "improvements": ["9月5日开始尝试吃更多西兰花", "9月7日主动要求喝水而不是果汁"],
+                "concerns": [
+                    "9月4日和9月7日在看电视时无意识地吃了过多零食",
+                    "9月2日因不喜欢午餐中的青椒而减少了整体食物摄入"
+                ]
+            },
+            "recommendations": [
+                "建立无干扰的用餐环境，特别是晚餐时避免看电视",
+                "使用趣味性的方式鼓励多喝水，如使用有趣的水杯或添加少量水果增味",
+                "通过游戏或故事形式增加对蔬菜的接受度",
+                "教导食物份量概念，使用适合儿童的餐具",
+                "保持规律的用餐时间，继续家庭共餐习惯",
+                "让小明参与简单的食物准备过程，增加对食物的兴趣"
+            ]
+        }
+    }
+]

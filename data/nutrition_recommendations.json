@@ -1,245 +1,245 @@
 [
-  {
-    "ageGroup": "1-3岁",
-    "recommendations": {
-      "calories": {
-        "min": 800,
-        "max": 1200,
-        "unit": "kcal/天"
-      },
-      "protein": {
-        "min": 13,
-        "max": 20,
-        "unit": "g/天"
-      },
-      "fat": {
-        "min": 30,
-        "max": 40,
-        "unit": "g/天",
-        "note": "应占总热量的30-40%"
-      },
-      "carbs": {
-        "min": 100,
-        "max": 150,
-        "unit": "g/天",
-        "note": "应占总热量的45-65%"
-      },
-      "fiber": {
-        "min": 7,
-        "max": 10,
-        "unit": "g/天"
-      },
-      "calcium": {
-        "min": 700,
-        "max": 800,
-        "unit": "mg/天"
-      },
-      "iron": {
-        "min": 7,
-        "max": 10,
-        "unit": "mg/天"
-      },
-      "hydration": {
-        "min": 800,
-        "max": 1300,
-        "unit": "ml/天"
-      },
-      "mealFrequency": {
-        "recommendation": "每天3餐2点，食物种类多样化",
-        "note": "婴幼儿胃容量小，应少食多餐"
-      },
-      "generalAdvice": [
-        "继续提供富含铁的食物",
-        "使用全脂牛奶代替母乳或配方奶",
-        "鼓励自主进食",
-        "提供多样化的食物，不添加额外糖和盐",
-        "避免给予可能导致窒息的食物，如整颗葡萄、坚果、爆米花等",
-        "限制果汁摄入，鼓励饮水"
-      ]
-    }
-  },
-  {
-    "ageGroup": "4-8岁",
-    "recommendations": {
-      "calories": {
-        "min": 1200,
-        "max": 1800,
-        "unit": "kcal/天"
-      },
-      "protein": {
-        "min": 19,
-        "max": 30,
-        "unit": "g/天"
-      },
-      "fat": {
-        "min": 40,
-        "max": 60,
-        "unit": "g/天",
-        "note": "应占总热量的25-35%"
-      },
-      "carbs": {
-        "min": 150,
-        "max": 250,
-        "unit": "g/天",
-        "note": "应占总热量的45-65%"
-      },
-      "fiber": {
-        "min": 12,
-        "max": 18,
-        "unit": "g/天"
-      },
-      "calcium": {
-        "min": 1000,
-        "max": 1200,
-        "unit": "mg/天"
-      },
-      "iron": {
-        "min": 10,
-        "max": 12,
-        "unit": "mg/天"
-      },
-      "hydration": {
-        "min": 1300,
-        "max": 1700,
-        "unit": "ml/天"
-      },
-      "mealFrequency": {
-        "recommendation": "每天3餐2点，保持规律饮食习惯",
-        "note": "鼓励参与食物准备，培养健康饮食习惯"
-      },
-      "generalAdvice": [
-        "保持食物多样性，每天包含各种颜色的蔬果",
-        "控制加工食品和甜食的摄入",
-        "鼓励家庭共同用餐",
-        "避免将食物作为奖励",
-        "提供适量乳制品保证钙摄入",
-        "限制含糖饮料，鼓励饮水"
-      ]
-    }
-  },
-  {
-    "ageGroup": "9-13岁",
-    "recommendations": {
-      "calories": {
-        "min": 1600,
-        "max": 2200,
-        "unit": "kcal/天"
-      },
-      "protein": {
-        "min": 34,
-        "max": 55,
-        "unit": "g/天"
-      },
-      "fat": {
-        "min": 50,
-        "max": 75,
-        "unit": "g/天",
-        "note": "应占总热量的25-35%"
-      },
-      "carbs": {
-        "min": 220,
-        "max": 320,
-        "unit": "g/天",
-        "note": "应占总热量的45-65%"
-      },
-      "fiber": {
-        "min": 20,
-        "max": 28,
-        "unit": "g/天"
-      },
-      "calcium": {
-        "min": 1300,
-        "max": 1500,
-        "unit": "mg/天"
-      },
-      "iron": {
-        "min": 8,
-        "max": 15,
-        "unit": "mg/天"
-      },
-      "hydration": {
-        "min": 1800,
-        "max": 2300,
-        "unit": "ml/天"
-      },
-      "mealFrequency": {
-        "recommendation": "每天3餐1-2点，注意饭前不要过度零食",
-        "note": "学业压力增加，注意保持规律饮食"
-      },
-      "generalAdvice": [
-        "青春期前后需要更多蛋白质和钙支持生长发育",
-        "鼓励参与体育活动，根据活动量调整能量摄入",
-        "为青春期生长高峰提供充足营养",
-        "注意营养教育，提高自主选择健康食物的能力",
-        "培养健康的身体形象观念",
-        "保证充足的钙摄入，促进骨骼发育"
-      ]
-    }
-  },
-  {
-    "ageGroup": "14-16岁",
-    "recommendations": {
-      "calories": {
-        "min": 2000,
-        "max": 3000,
-        "unit": "kcal/天"
-      },
-      "protein": {
-        "min": 46,
-        "max": 75,
-        "unit": "g/天"
-      },
-      "fat": {
-        "min": 65,
-        "max": 100,
-        "unit": "g/天",
-        "note": "应占总热量的25-35%"
-      },
-      "carbs": {
-        "min": 275,
-        "max": 400,
-        "unit": "g/天",
-        "note": "应占总热量的45-65%"
-      },
-      "fiber": {
-        "min": 25,
-        "max": 35,
-        "unit": "g/天"
-      },
-      "calcium": {
-        "min": 1300,
-        "max": 1500,
-        "unit": "mg/天"
-      },
-      "iron": {
-        "female": {
-          "min": 15,
-          "max": 18,
-          "unit": "mg/天"
-        },
-        "male": {
-          "min": 11,
-          "max": 15,
-          "unit": "mg/天"
+    {
+        "ageGroup": "1-3岁",
+        "recommendations": {
+            "calories": {
+                "min": 800,
+                "max": 1200,
+                "unit": "kcal/天"
+            },
+            "protein": {
+                "min": 13,
+                "max": 20,
+                "unit": "g/天"
+            },
+            "fat": {
+                "min": 30,
+                "max": 40,
+                "unit": "g/天",
+                "note": "应占总热量的30-40%"
+            },
+            "carbs": {
+                "min": 100,
+                "max": 150,
+                "unit": "g/天",
+                "note": "应占总热量的45-65%"
+            },
+            "fiber": {
+                "min": 7,
+                "max": 10,
+                "unit": "g/天"
+            },
+            "calcium": {
+                "min": 700,
+                "max": 800,
+                "unit": "mg/天"
+            },
+            "iron": {
+                "min": 7,
+                "max": 10,
+                "unit": "mg/天"
+            },
+            "hydration": {
+                "min": 800,
+                "max": 1300,
+                "unit": "ml/天"
+            },
+            "mealFrequency": {
+                "recommendation": "每天3餐2点，食物种类多样化",
+                "note": "婴幼儿胃容量小，应少食多餐"
+            },
+            "generalAdvice": [
+                "继续提供富含铁的食物",
+                "使用全脂牛奶代替母乳或配方奶",
+                "鼓励自主进食",
+                "提供多样化的食物，不添加额外糖和盐",
+                "避免给予可能导致窒息的食物，如整颗葡萄、坚果、爆米花等",
+                "限制果汁摄入，鼓励饮水"
+            ]
         }
-      },
-      "hydration": {
-        "min": 2000,
-        "max": 2700,
-        "unit": "ml/天"
-      },
-      "mealFrequency": {
-        "recommendation": "每天3餐，根据活动量添加加餐",
-        "note": "青少年生长高峰期，需要满足增长的营养需求"
-      },
-      "generalAdvice": [
-        "青春期需要更多的能量和蛋白质支持快速生长",
-        "女性青少年需要关注铁质摄入",
-        "避免过度节食或不健康的减肥方式",
-        "适当控制精制糖和快餐食品摄入",
-        "保证充足的钙摄入，这是骨密度形成的关键时期",
-        "运动员和高强度体育活动者需要增加能量和蛋白质摄入"
-      ]
+    },
+    {
+        "ageGroup": "4-8岁",
+        "recommendations": {
+            "calories": {
+                "min": 1200,
+                "max": 1800,
+                "unit": "kcal/天"
+            },
+            "protein": {
+                "min": 19,
+                "max": 30,
+                "unit": "g/天"
+            },
+            "fat": {
+                "min": 40,
+                "max": 60,
+                "unit": "g/天",
+                "note": "应占总热量的25-35%"
+            },
+            "carbs": {
+                "min": 150,
+                "max": 250,
+                "unit": "g/天",
+                "note": "应占总热量的45-65%"
+            },
+            "fiber": {
+                "min": 12,
+                "max": 18,
+                "unit": "g/天"
+            },
+            "calcium": {
+                "min": 1000,
+                "max": 1200,
+                "unit": "mg/天"
+            },
+            "iron": {
+                "min": 10,
+                "max": 12,
+                "unit": "mg/天"
+            },
+            "hydration": {
+                "min": 1300,
+                "max": 1700,
+                "unit": "ml/天"
+            },
+            "mealFrequency": {
+                "recommendation": "每天3餐2点，保持规律饮食习惯",
+                "note": "鼓励参与食物准备，培养健康饮食习惯"
+            },
+            "generalAdvice": [
+                "保持食物多样性，每天包含各种颜色的蔬果",
+                "控制加工食品和甜食的摄入",
+                "鼓励家庭共同用餐",
+                "避免将食物作为奖励",
+                "提供适量乳制品保证钙摄入",
+                "限制含糖饮料，鼓励饮水"
+            ]
+        }
+    },
+    {
+        "ageGroup": "9-13岁",
+        "recommendations": {
+            "calories": {
+                "min": 1600,
+                "max": 2200,
+                "unit": "kcal/天"
+            },
+            "protein": {
+                "min": 34,
+                "max": 55,
+                "unit": "g/天"
+            },
+            "fat": {
+                "min": 50,
+                "max": 75,
+                "unit": "g/天",
+                "note": "应占总热量的25-35%"
+            },
+            "carbs": {
+                "min": 220,
+                "max": 320,
+                "unit": "g/天",
+                "note": "应占总热量的45-65%"
+            },
+            "fiber": {
+                "min": 20,
+                "max": 28,
+                "unit": "g/天"
+            },
+            "calcium": {
+                "min": 1300,
+                "max": 1500,
+                "unit": "mg/天"
+            },
+            "iron": {
+                "min": 8,
+                "max": 15,
+                "unit": "mg/天"
+            },
+            "hydration": {
+                "min": 1800,
+                "max": 2300,
+                "unit": "ml/天"
+            },
+            "mealFrequency": {
+                "recommendation": "每天3餐1-2点，注意饭前不要过度零食",
+                "note": "学业压力增加，注意保持规律饮食"
+            },
+            "generalAdvice": [
+                "青春期前后需要更多蛋白质和钙支持生长发育",
+                "鼓励参与体育活动，根据活动量调整能量摄入",
+                "为青春期生长高峰提供充足营养",
+                "注意营养教育，提高自主选择健康食物的能力",
+                "培养健康的身体形象观念",
+                "保证充足的钙摄入，促进骨骼发育"
+            ]
+        }
+    },
+    {
+        "ageGroup": "14-16岁",
+        "recommendations": {
+            "calories": {
+                "min": 2000,
+                "max": 3000,
+                "unit": "kcal/天"
+            },
+            "protein": {
+                "min": 46,
+                "max": 75,
+                "unit": "g/天"
+            },
+            "fat": {
+                "min": 65,
+                "max": 100,
+                "unit": "g/天",
+                "note": "应占总热量的25-35%"
+            },
+            "carbs": {
+                "min": 275,
+                "max": 400,
+                "unit": "g/天",
+                "note": "应占总热量的45-65%"
+            },
+            "fiber": {
+                "min": 25,
+                "max": 35,
+                "unit": "g/天"
+            },
+            "calcium": {
+                "min": 1300,
+                "max": 1500,
+                "unit": "mg/天"
+            },
+            "iron": {
+                "female": {
+                    "min": 15,
+                    "max": 18,
+                    "unit": "mg/天"
+                },
+                "male": {
+                    "min": 11,
+                    "max": 15,
+                    "unit": "mg/天"
+                }
+            },
+            "hydration": {
+                "min": 2000,
+                "max": 2700,
+                "unit": "ml/天"
+            },
+            "mealFrequency": {
+                "recommendation": "每天3餐，根据活动量添加加餐",
+                "note": "青少年生长高峰期，需要满足增长的营养需求"
+            },
+            "generalAdvice": [
+                "青春期需要更多的能量和蛋白质支持快速生长",
+                "女性青少年需要关注铁质摄入",
+                "避免过度节食或不健康的减肥方式",
+                "适当控制精制糖和快餐食品摄入",
+                "保证充足的钙摄入，这是骨密度形成的关键时期",
+                "运动员和高强度体育活动者需要增加能量和蛋白质摄入"
+            ]
+        }
     }
-  }
-] 
+]

@@ -1,314 +1,759 @@
 .dashboard {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
 }
 
 .header h1 {
-  font-size: 28px;
-  color: #4a6fa5;
-  margin: 0;
+    font-size: 28px;
+    color: #4a6fa5;
+    margin: 0;
 }
 
 .userSelector {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .userSelector label {
-  margin-right: 10px;
-  font-weight: 500;
+    margin-right: 10px;
+    font-weight: 500;
 }
 
 .userSelector select {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  background-color: white;
-  font-size: 16px;
-  cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.userInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+.userInfoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.userCard, .scoreCard {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-md);
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+.userCard,
+.scoreCard {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-speed) ease;
+    overflow: hidden;
+    position: relative;
 }
 
-.userCard:hover, .scoreCard:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+.userCard:hover,
+.scoreCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
-.userCard h2, .scoreCard h2 {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.75rem;
+.userCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
 }
 
-.userCard p {
-  margin-bottom: 0.75rem;
-  color: var(--text-primary);
-  font-size: 1rem;
-  line-height: 1.6;
+.userCardHeader h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
 }
 
-.userCard p:last-child {
-  margin-bottom: 0;
+.userAgeTag {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userCardContent {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.userCartoonContainer {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cartoonImageWrapper {
+    width: 120px;
+    height: 180px;
+    overflow: hidden;
+    background-color: rgba(var(--primary-rgb), 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-light);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.2);
+    transition:
+        transform var(--transition-speed) ease,
+        box-shadow var(--transition-speed) ease;
+}
+
+.cartoonImageWrapper:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(var(--primary-rgb), 0.3);
+}
+
+.cartoonImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    transition: transform var(--transition-speed) ease;
+}
+
+.cartoonImageWrapper:hover .cartoonImage {
+    transform: scale(1.05);
+}
+
+.userDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.userDetailItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detailIcon {
+    font-size: 1.25rem;
+    width: 24px;
+    text-align: center;
+}
+
+.detailLabel {
+    color: var(--text-secondary);
+    font-weight: 500;
+    min-width: 70px;
+}
+
+.detailValue {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.allergyTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.allergyTag {
+    background-color: rgba(var(--danger-rgb), 0.1);
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+    border-radius: 20px;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* 评分卡片 */
+.scoreCard h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
+    text-align: center;
+}
+
+.scoreCircleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .scoreCircle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: conic-gradient(
-    var(--primary-color) 0%, 
-    var(--primary-light) 50%, 
-    var(--accent-color) 100%
-  );
-  margin: 1.5rem auto;
-  position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--primary-color) 0%,
+        var(--primary-light) 50%,
+        var(--accent-color) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(var(--primary-rgb), 0.3);
 }
 
 .scoreCircle::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: var(--card-background);
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--card-background);
 }
 
 .scoreValue {
-  position: relative;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  z-index: 1;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    z-index: 1;
+}
+
+.scoreEmoji {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .scoreFeedback {
-  margin-top: 1.5rem;
-  background-color: rgba(var(--primary-rgb), 0.05);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  border-left: 4px solid var(--primary-color);
+    background-color: rgba(var(--primary-rgb), 0.05);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
 }
 
 .scoreFeedback p {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.feedbackBullet {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    line-height: 1;
 }
 
 .scoreFeedback p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .chartsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .chartCard {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-md);
-  transition: transform var(--transition-speed) ease;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .chartCard:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
 .chartCard h3 {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.chartDescription {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.chartLegend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--border-color);
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.legendColor {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+/* 添加柱状图动画效果 */
+@keyframes barGrow {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+/* 为柱状图添加悬停效果 */
+.chartCard:hover .recharts-bar-rectangle {
+    transition: opacity var(--transition-speed) ease;
+}
+
+.chartCard:hover .recharts-bar-rectangle:hover {
+    opacity: 0.8;
 }
 
 .mealSection {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 2rem;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
 }
 
 .mealSection h3 {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
 }
 
 .mealCards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
-.mealCard, .hydrationCard {
-  background-color: rgba(var(--primary-rgb), 0.03);
-  border-radius: var(--border-radius);
-  padding: 1.25rem;
-  box-shadow: var(--shadow-sm);
+.mealCard,
+.hydrationCard {
+    background-color: rgba(var(--primary-rgb), 0.03);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
 }
 
-.mealCard h4, .hydrationCard h4 {
-  color: var(--primary-color);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.mealCard h4,
+.hydrationCard h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.mealCard h4::before, .hydrationCard h4::before {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
+.mealCard h4::before,
+.hydrationCard h4::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
 }
 
 .mealCard ul {
-  list-style: none;
-  padding-left: 0.5rem;
+    list-style: none;
+    padding-left: 0.5rem;
 }
 
 .mealCard li {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
 }
 
 .mealCard li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--primary-light);
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-light);
 }
 
 .hydrationCard p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .nutritionSummary {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-md);
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
 }
 
 .nutritionSummary h3 {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
 }
 
 .nutritionGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
 }
 
 .nutritionItem {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(var(--primary-rgb), 0.03);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  transition: transform var(--transition-speed) ease;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--primary-rgb), 0.03);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: transform var(--transition-speed) ease;
 }
 
 .nutritionItem:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .nutritionItem span {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
 }
 
 .nutritionItem strong {
-  font-size: 1.25rem;
-  color: var(--primary-color);
+    font-size: 1.25rem;
+    color: var(--primary-color);
 }
 
 .loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  font-size: 1.25rem;
-  color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+/* 饮食行为分析部分 */
+.behaviorCard {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-speed) ease;
+}
+
+.behaviorCard:hover {
+    transform: translateY(-5px);
+}
+
+.behaviorCard h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.behaviorContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.behaviorPeriod {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.behaviorSummary {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.behaviorSection {
+    margin-bottom: 1.5rem;
+}
+
+.behaviorSection h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mealTimingGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.mealTimingItem {
+    background-color: rgba(var(--primary-rgb), 0.03);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: transform var(--transition-speed) ease;
+}
+
+.mealTimingItem:hover {
+    transform: translateY(-5px);
+}
+
+.mealTimingHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.mealName {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.consistencyBadge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.highConsistency {
+    background-color: var(--success-color);
+}
+
+.mediumConsistency {
+    background-color: var(--warning-color);
+}
+
+.lowConsistency {
+    background-color: var(--danger-color);
+}
+
+.mealTime {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.mealComment {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.habitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.habitItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: rgba(var(--primary-rgb), 0.03);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.habitLabel {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.habitValue {
+    font-size: 1rem;
+}
+
+.foodTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.foodTag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background-color: var(--primary-light);
+    color: white;
+    font-size: 0.8rem;
+}
+
+.dislikeTag {
+    background-color: var(--danger-color);
+}
+
+.changesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.improvementsSection,
+.concernsSection {
+    background-color: rgba(var(--primary-rgb), 0.03);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.improvementsSection h5,
+.concernsSection h5 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.changesList {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.improvementItem,
+.concernItem {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.improvementItem::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+.concernItem::before {
+    content: '!';
+    position: absolute;
+    left: 0;
+    color: var(--warning-color);
+    font-weight: bold;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .userSelector {
-    margin-top: 15px;
-  }
-  
-  .userInfo {
-    grid-template-columns: 1fr;
-  }
-  
-  .chartsContainer {
-    grid-template-columns: 1fr;
-  }
-  
-  .nutritionGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .userSelector {
+        margin-top: 15px;
+    }
+
+    .userInfoContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .userCardContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userCartoonContainer {
+        margin-bottom: 1.5rem;
+    }
+
+    .cartoonImageWrapper {
+        width: 150px;
+        height: 220px;
+    }
+
+    .chartsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .nutritionGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mealTimingGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .changesContainer {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-  .mealCards {
-    grid-template-columns: 1fr;
-  }
-  
-  .nutritionGrid {
-    grid-template-columns: 1fr;
-  }
-} 
+    .mealCards {
+        grid-template-columns: 1fr;
+    }
+
+    .nutritionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .cartoonImageWrapper {
+        width: 130px;
+        height: 200px;
+    }
+}

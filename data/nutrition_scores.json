@@ -1,513 +1,513 @@
 [
-  {
-    "userId": 1,
-    "name": "小明",
-    "age": 5,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 82,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 90,
-          "fatIntake": 75,
-          "carbsIntake": 80,
-          "fiberIntake": 70,
-          "sugarControl": 65,
-          "sodiumControl": 78,
-          "hydration": 88,
-          "mealDiversity": 85,
-          "nutritionalBalance": 83,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "营养摄入总体均衡，蛋白质摄入良好",
-          "水分摄入充足，有助于保持水分平衡",
-          "可以适当减少糖分摄入，特别是果汁饮料",
-          "很好地避开了坚果类过敏原",
-          "可以增加一些膳食纤维的摄入"
+    {
+        "userId": 1,
+        "name": "小明",
+        "age": 5,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 82,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 90,
+                    "fatIntake": 75,
+                    "carbsIntake": 80,
+                    "fiberIntake": 70,
+                    "sugarControl": 65,
+                    "sodiumControl": 78,
+                    "hydration": 88,
+                    "mealDiversity": 85,
+                    "nutritionalBalance": 83,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "营养摄入总体均衡，蛋白质摄入良好",
+                    "水分摄入充足，有助于保持水分平衡",
+                    "可以适当减少糖分摄入，特别是果汁饮料",
+                    "很好地避开了坚果类过敏原",
+                    "可以增加一些膳食纤维的摄入"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 78,
+                "categoryScores": {
+                    "calorieBalance": 80,
+                    "proteinIntake": 85,
+                    "fatIntake": 70,
+                    "carbsIntake": 82,
+                    "fiberIntake": 65,
+                    "sugarControl": 60,
+                    "sodiumControl": 75,
+                    "hydration": 85,
+                    "mealDiversity": 80,
+                    "nutritionalBalance": 80,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "总体营养状况良好",
+                    "零食中糖分摄入略高，建议选择更健康的零食",
+                    "可以增加更多蔬菜水果提高膳食纤维摄入",
+                    "很好地避开了坚果类过敏原"
+                ]
+            },
+            {
+                "date": "2023-09-03",
+                "overallScore": 84,
+                "categoryScores": {
+                    "calorieBalance": 86,
+                    "proteinIntake": 82,
+                    "fatIntake": 78,
+                    "carbsIntake": 88,
+                    "fiberIntake": 78,
+                    "sugarControl": 70,
+                    "sodiumControl": 76,
+                    "hydration": 87,
+                    "mealDiversity": 82,
+                    "nutritionalBalance": 84,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "饮食多样性良好，包含多种食物类型",
+                    "膳食纤维摄入有所提高，继续保持",
+                    "很好地避开了坚果类过敏原",
+                    "饺子摄入量较多，注意控制钠的摄入"
+                ]
+            },
+            {
+                "date": "2023-09-04",
+                "overallScore": 80,
+                "categoryScores": {
+                    "calorieBalance": 84,
+                    "proteinIntake": 90,
+                    "fatIntake": 78,
+                    "carbsIntake": 82,
+                    "fiberIntake": 72,
+                    "sugarControl": 62,
+                    "sodiumControl": 75,
+                    "hydration": 82,
+                    "mealDiversity": 80,
+                    "nutritionalBalance": 82,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "蛋白质摄入良好，有助于生长发育",
+                    "水果软糖和果汁导致糖分摄入偏高",
+                    "水分摄入略有下降，建议增加饮水量",
+                    "很好地避开了坚果类过敏原"
+                ]
+            },
+            {
+                "date": "2023-09-05",
+                "overallScore": 85,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 86,
+                    "fatIntake": 82,
+                    "carbsIntake": 80,
+                    "fiberIntake": 70,
+                    "sugarControl": 75,
+                    "sodiumControl": 76,
+                    "hydration": 85,
+                    "mealDiversity": 88,
+                    "nutritionalBalance": 85,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "饮食多样性很好，包含多种食物类型",
+                    "三文鱼提供了优质脂肪酸，对大脑发育有益",
+                    "水分摄入充足",
+                    "很好地避开了坚果类过敏原"
+                ]
+            },
+            {
+                "date": "2023-09-06",
+                "overallScore": 82,
+                "categoryScores": {
+                    "calorieBalance": 83,
+                    "proteinIntake": 84,
+                    "fatIntake": 76,
+                    "carbsIntake": 85,
+                    "fiberIntake": 75,
+                    "sugarControl": 72,
+                    "sodiumControl": 80,
+                    "hydration": 90,
+                    "mealDiversity": 78,
+                    "nutritionalBalance": 80,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "水分摄入非常好，有助于保持水分平衡",
+                    "膳食纤维摄入有所提高",
+                    "饮食多样性可以进一步提高",
+                    "很好地避开了坚果类过敏原"
+                ]
+            },
+            {
+                "date": "2023-09-07",
+                "overallScore": 81,
+                "categoryScores": {
+                    "calorieBalance": 86,
+                    "proteinIntake": 85,
+                    "fatIntake": 78,
+                    "carbsIntake": 86,
+                    "fiberIntake": 68,
+                    "sugarControl": 64,
+                    "sodiumControl": 74,
+                    "hydration": 86,
+                    "mealDiversity": 82,
+                    "nutritionalBalance": 80,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "卡通饼干和果汁导致糖分摄入偏高",
+                    "蛋白质摄入良好，有助于生长发育",
+                    "可以增加更多蔬菜水果提高膳食纤维摄入",
+                    "很好地避开了坚果类过敏原"
+                ]
+            },
+            {
+                "date": "2023-09-08",
+                "overallScore": 88,
+                "categoryScores": {
+                    "calorieBalance": 88,
+                    "proteinIntake": 92,
+                    "fatIntake": 85,
+                    "carbsIntake": 82,
+                    "fiberIntake": 78,
+                    "sugarControl": 72,
+                    "sodiumControl": 80,
+                    "hydration": 88,
+                    "mealDiversity": 90,
+                    "nutritionalBalance": 88,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "饮食非常均衡，各营养素摄入合理",
+                    "蛋白质摄入优秀，有助于生长发育",
+                    "饮食多样性很好，包含多种食物类型",
+                    "水分摄入充足，有助于保持水分平衡",
+                    "很好地避开了坚果类过敏原"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 78,
-        "categoryScores": {
-          "calorieBalance": 80,
-          "proteinIntake": 85,
-          "fatIntake": 70,
-          "carbsIntake": 82,
-          "fiberIntake": 65,
-          "sugarControl": 60,
-          "sodiumControl": 75,
-          "hydration": 85,
-          "mealDiversity": 80,
-          "nutritionalBalance": 80,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "总体营养状况良好",
-          "零食中糖分摄入略高，建议选择更健康的零食",
-          "可以增加更多蔬菜水果提高膳食纤维摄入",
-          "很好地避开了坚果类过敏原"
+    },
+    {
+        "userId": 2,
+        "name": "小红",
+        "age": 8,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 85,
+                "categoryScores": {
+                    "calorieBalance": 88,
+                    "proteinIntake": 82,
+                    "fatIntake": 80,
+                    "carbsIntake": 85,
+                    "fiberIntake": 78,
+                    "sugarControl": 75,
+                    "sodiumControl": 82,
+                    "hydration": 90,
+                    "mealDiversity": 92,
+                    "nutritionalBalance": 85,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "饮食多样性很好，包含多种食物类型",
+                    "水分摄入充足",
+                    "蛋白质摄入可以适当增加",
+                    "膳食纤维摄入可以提高"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 88,
+                "categoryScores": {
+                    "calorieBalance": 90,
+                    "proteinIntake": 85,
+                    "fatIntake": 82,
+                    "carbsIntake": 88,
+                    "fiberIntake": 80,
+                    "sugarControl": 78,
+                    "sodiumControl": 85,
+                    "hydration": 92,
+                    "mealDiversity": 90,
+                    "nutritionalBalance": 88,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "营养摄入均衡，热量控制良好",
+                    "饮食多样性保持良好",
+                    "水分摄入充足",
+                    "继续保持这样的饮食习惯"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-03",
-        "overallScore": 84,
-        "categoryScores": {
-          "calorieBalance": 86,
-          "proteinIntake": 82,
-          "fatIntake": 78,
-          "carbsIntake": 88,
-          "fiberIntake": 78,
-          "sugarControl": 70,
-          "sodiumControl": 76,
-          "hydration": 87,
-          "mealDiversity": 82,
-          "nutritionalBalance": 84,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "饮食多样性良好，包含多种食物类型",
-          "膳食纤维摄入有所提高，继续保持",
-          "很好地避开了坚果类过敏原",
-          "饺子摄入量较多，注意控制钠的摄入"
+    },
+    {
+        "userId": 3,
+        "name": "小华",
+        "age": 13,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 79,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 95,
+                    "fatIntake": 75,
+                    "carbsIntake": 82,
+                    "fiberIntake": 72,
+                    "sugarControl": 68,
+                    "sodiumControl": 70,
+                    "hydration": 88,
+                    "mealDiversity": 80,
+                    "nutritionalBalance": 78,
+                    "allergenAvoidance": 70
+                },
+                "feedback": [
+                    "蛋白质摄入非常好，有助于运动后恢复",
+                    "钠摄入略高，建议减少加工食品",
+                    "注意避免乳制品摄入，发现有酸奶消费",
+                    "可以增加更多种类的蔬菜水果"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 83,
+                "categoryScores": {
+                    "calorieBalance": 88,
+                    "proteinIntake": 92,
+                    "fatIntake": 78,
+                    "carbsIntake": 85,
+                    "fiberIntake": 75,
+                    "sugarControl": 72,
+                    "sodiumControl": 75,
+                    "hydration": 90,
+                    "mealDiversity": 82,
+                    "nutritionalBalance": 80,
+                    "allergenAvoidance": 90
+                },
+                "feedback": [
+                    "营养摄入更加均衡",
+                    "很好地避开了乳制品",
+                    "蛋白质摄入继续保持良好水平",
+                    "膳食纤维摄入仍有提升空间"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-04",
-        "overallScore": 80,
-        "categoryScores": {
-          "calorieBalance": 84,
-          "proteinIntake": 90,
-          "fatIntake": 78,
-          "carbsIntake": 82,
-          "fiberIntake": 72,
-          "sugarControl": 62,
-          "sodiumControl": 75,
-          "hydration": 82,
-          "mealDiversity": 80,
-          "nutritionalBalance": 82,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "蛋白质摄入良好，有助于生长发育",
-          "水果软糖和果汁导致糖分摄入偏高",
-          "水分摄入略有下降，建议增加饮水量",
-          "很好地避开了坚果类过敏原"
+    },
+    {
+        "userId": 4,
+        "name": "小雪",
+        "age": 16,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 90,
+                "categoryScores": {
+                    "calorieBalance": 92,
+                    "proteinIntake": 88,
+                    "fatIntake": 85,
+                    "carbsIntake": 87,
+                    "fiberIntake": 90,
+                    "sugarControl": 85,
+                    "sodiumControl": 88,
+                    "hydration": 95,
+                    "mealDiversity": 92,
+                    "nutritionalBalance": 90,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "饮食非常均衡，各营养素摄入合理",
+                    "水分摄入充足，有助于保持良好的代谢状态",
+                    "膳食纤维摄入良好",
+                    "继续保持这样的饮食习惯"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 88,
+                "categoryScores": {
+                    "calorieBalance": 90,
+                    "proteinIntake": 85,
+                    "fatIntake": 82,
+                    "carbsIntake": 88,
+                    "fiberIntake": 88,
+                    "sugarControl": 82,
+                    "sodiumControl": 85,
+                    "hydration": 92,
+                    "mealDiversity": 90,
+                    "nutritionalBalance": 88,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "总体营养状况良好",
+                    "蛋白质摄入略有下降，可以适当增加",
+                    "水分摄入继续保持良好",
+                    "饮食多样性保持良好"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-05",
-        "overallScore": 85,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 86,
-          "fatIntake": 82,
-          "carbsIntake": 80,
-          "fiberIntake": 70,
-          "sugarControl": 75,
-          "sodiumControl": 76,
-          "hydration": 85,
-          "mealDiversity": 88,
-          "nutritionalBalance": 85,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "饮食多样性很好，包含多种食物类型",
-          "三文鱼提供了优质脂肪酸，对大脑发育有益",
-          "水分摄入充足",
-          "很好地避开了坚果类过敏原"
+    },
+    {
+        "userId": 5,
+        "name": "小强",
+        "age": 1,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 88,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 82,
+                    "fatIntake": 90,
+                    "carbsIntake": 88,
+                    "fiberIntake": 85,
+                    "sugarControl": 90,
+                    "sodiumControl": 95,
+                    "hydration": 85,
+                    "mealDiversity": 80,
+                    "nutritionalBalance": 88,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "饮食适合婴儿需求，营养均衡",
+                    "钠摄入控制得很好",
+                    "可以适当增加食物多样性",
+                    "蛋白质摄入可以略微增加"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 85,
+                "categoryScores": {
+                    "calorieBalance": 82,
+                    "proteinIntake": 80,
+                    "fatIntake": 88,
+                    "carbsIntake": 85,
+                    "fiberIntake": 82,
+                    "sugarControl": 88,
+                    "sodiumControl": 92,
+                    "hydration": 82,
+                    "mealDiversity": 78,
+                    "nutritionalBalance": 85,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "总体营养状况良好",
+                    "水分摄入略有下降，需要注意补充",
+                    "可以尝试引入更多种类的食物",
+                    "钠摄入控制继续保持良好"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-06",
-        "overallScore": 82,
-        "categoryScores": {
-          "calorieBalance": 83,
-          "proteinIntake": 84,
-          "fatIntake": 76,
-          "carbsIntake": 85,
-          "fiberIntake": 75,
-          "sugarControl": 72,
-          "sodiumControl": 80,
-          "hydration": 90,
-          "mealDiversity": 78,
-          "nutritionalBalance": 80,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "水分摄入非常好，有助于保持水分平衡",
-          "膳食纤维摄入有所提高",
-          "饮食多样性可以进一步提高",
-          "很好地避开了坚果类过敏原"
+    },
+    {
+        "userId": 6,
+        "name": "小丽",
+        "age": 3,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 84,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 80,
+                    "fatIntake": 88,
+                    "carbsIntake": 82,
+                    "fiberIntake": 78,
+                    "sugarControl": 82,
+                    "sodiumControl": 85,
+                    "hydration": 88,
+                    "mealDiversity": 80,
+                    "nutritionalBalance": 85,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "饮食总体均衡，适合幼儿需求",
+                    "很好地避开了鸡蛋过敏原",
+                    "可以增加更多蔬菜水果提高膳食纤维",
+                    "水分摄入充足"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 86,
+                "categoryScores": {
+                    "calorieBalance": 88,
+                    "proteinIntake": 82,
+                    "fatIntake": 85,
+                    "carbsIntake": 85,
+                    "fiberIntake": 80,
+                    "sugarControl": 85,
+                    "sodiumControl": 88,
+                    "hydration": 90,
+                    "mealDiversity": 82,
+                    "nutritionalBalance": 88,
+                    "allergenAvoidance": 95
+                },
+                "feedback": [
+                    "营养摄入更加均衡",
+                    "继续很好地避开鸡蛋过敏原",
+                    "膳食纤维摄入有所提高",
+                    "水分摄入继续保持良好"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-07",
-        "overallScore": 81,
-        "categoryScores": {
-          "calorieBalance": 86,
-          "proteinIntake": 85,
-          "fatIntake": 78,
-          "carbsIntake": 86,
-          "fiberIntake": 68,
-          "sugarControl": 64,
-          "sodiumControl": 74,
-          "hydration": 86,
-          "mealDiversity": 82,
-          "nutritionalBalance": 80,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "卡通饼干和果汁导致糖分摄入偏高",
-          "蛋白质摄入良好，有助于生长发育",
-          "可以增加更多蔬菜水果提高膳食纤维摄入",
-          "很好地避开了坚果类过敏原"
+    },
+    {
+        "userId": 7,
+        "name": "小刚",
+        "age": 11,
+        "scores": [
+            {
+                "date": "2023-09-01",
+                "overallScore": 80,
+                "categoryScores": {
+                    "calorieBalance": 82,
+                    "proteinIntake": 85,
+                    "fatIntake": 78,
+                    "carbsIntake": 80,
+                    "fiberIntake": 75,
+                    "sugarControl": 72,
+                    "sodiumControl": 78,
+                    "hydration": 85,
+                    "mealDiversity": 82,
+                    "nutritionalBalance": 80,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "营养摄入总体均衡",
+                    "可以减少加工食品摄入，降低糖分和钠摄入",
+                    "增加更多蔬菜水果提高膳食纤维",
+                    "蛋白质摄入良好，有助于生长发育"
+                ]
+            },
+            {
+                "date": "2023-09-02",
+                "overallScore": 83,
+                "categoryScores": {
+                    "calorieBalance": 85,
+                    "proteinIntake": 88,
+                    "fatIntake": 80,
+                    "carbsIntake": 82,
+                    "fiberIntake": 78,
+                    "sugarControl": 75,
+                    "sodiumControl": 80,
+                    "hydration": 88,
+                    "mealDiversity": 85,
+                    "nutritionalBalance": 82,
+                    "allergenAvoidance": 100
+                },
+                "feedback": [
+                    "营养状况有所改善",
+                    "蛋白质摄入增加，有助于运动后恢复",
+                    "糖分控制仍有提升空间",
+                    "饮食多样性有所提高"
+                ]
+            }
         ]
-      },
-      {
-        "date": "2023-09-08",
-        "overallScore": 88,
-        "categoryScores": {
-          "calorieBalance": 88,
-          "proteinIntake": 92,
-          "fatIntake": 85,
-          "carbsIntake": 82,
-          "fiberIntake": 78,
-          "sugarControl": 72,
-          "sodiumControl": 80,
-          "hydration": 88,
-          "mealDiversity": 90,
-          "nutritionalBalance": 88,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "饮食非常均衡，各营养素摄入合理",
-          "蛋白质摄入优秀，有助于生长发育",
-          "饮食多样性很好，包含多种食物类型",
-          "水分摄入充足，有助于保持水分平衡",
-          "很好地避开了坚果类过敏原"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 2,
-    "name": "小红",
-    "age": 8,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 85,
-        "categoryScores": {
-          "calorieBalance": 88,
-          "proteinIntake": 82,
-          "fatIntake": 80,
-          "carbsIntake": 85,
-          "fiberIntake": 78,
-          "sugarControl": 75,
-          "sodiumControl": 82,
-          "hydration": 90,
-          "mealDiversity": 92,
-          "nutritionalBalance": 85,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "饮食多样性很好，包含多种食物类型",
-          "水分摄入充足",
-          "蛋白质摄入可以适当增加",
-          "膳食纤维摄入可以提高"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 88,
-        "categoryScores": {
-          "calorieBalance": 90,
-          "proteinIntake": 85,
-          "fatIntake": 82,
-          "carbsIntake": 88,
-          "fiberIntake": 80,
-          "sugarControl": 78,
-          "sodiumControl": 85,
-          "hydration": 92,
-          "mealDiversity": 90,
-          "nutritionalBalance": 88,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "营养摄入均衡，热量控制良好",
-          "饮食多样性保持良好",
-          "水分摄入充足",
-          "继续保持这样的饮食习惯"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 3,
-    "name": "小华",
-    "age": 13,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 79,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 95,
-          "fatIntake": 75,
-          "carbsIntake": 82,
-          "fiberIntake": 72,
-          "sugarControl": 68,
-          "sodiumControl": 70,
-          "hydration": 88,
-          "mealDiversity": 80,
-          "nutritionalBalance": 78,
-          "allergenAvoidance": 70
-        },
-        "feedback": [
-          "蛋白质摄入非常好，有助于运动后恢复",
-          "钠摄入略高，建议减少加工食品",
-          "注意避免乳制品摄入，发现有酸奶消费",
-          "可以增加更多种类的蔬菜水果"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 83,
-        "categoryScores": {
-          "calorieBalance": 88,
-          "proteinIntake": 92,
-          "fatIntake": 78,
-          "carbsIntake": 85,
-          "fiberIntake": 75,
-          "sugarControl": 72,
-          "sodiumControl": 75,
-          "hydration": 90,
-          "mealDiversity": 82,
-          "nutritionalBalance": 80,
-          "allergenAvoidance": 90
-        },
-        "feedback": [
-          "营养摄入更加均衡",
-          "很好地避开了乳制品",
-          "蛋白质摄入继续保持良好水平",
-          "膳食纤维摄入仍有提升空间"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 4,
-    "name": "小雪",
-    "age": 16,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 90,
-        "categoryScores": {
-          "calorieBalance": 92,
-          "proteinIntake": 88,
-          "fatIntake": 85,
-          "carbsIntake": 87,
-          "fiberIntake": 90,
-          "sugarControl": 85,
-          "sodiumControl": 88,
-          "hydration": 95,
-          "mealDiversity": 92,
-          "nutritionalBalance": 90,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "饮食非常均衡，各营养素摄入合理",
-          "水分摄入充足，有助于保持良好的代谢状态",
-          "膳食纤维摄入良好",
-          "继续保持这样的饮食习惯"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 88,
-        "categoryScores": {
-          "calorieBalance": 90,
-          "proteinIntake": 85,
-          "fatIntake": 82,
-          "carbsIntake": 88,
-          "fiberIntake": 88,
-          "sugarControl": 82,
-          "sodiumControl": 85,
-          "hydration": 92,
-          "mealDiversity": 90,
-          "nutritionalBalance": 88,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "总体营养状况良好",
-          "蛋白质摄入略有下降，可以适当增加",
-          "水分摄入继续保持良好",
-          "饮食多样性保持良好"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 5,
-    "name": "小强",
-    "age": 1,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 88,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 82,
-          "fatIntake": 90,
-          "carbsIntake": 88,
-          "fiberIntake": 85,
-          "sugarControl": 90,
-          "sodiumControl": 95,
-          "hydration": 85,
-          "mealDiversity": 80,
-          "nutritionalBalance": 88,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "饮食适合婴儿需求，营养均衡",
-          "钠摄入控制得很好",
-          "可以适当增加食物多样性",
-          "蛋白质摄入可以略微增加"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 85,
-        "categoryScores": {
-          "calorieBalance": 82,
-          "proteinIntake": 80,
-          "fatIntake": 88,
-          "carbsIntake": 85,
-          "fiberIntake": 82,
-          "sugarControl": 88,
-          "sodiumControl": 92,
-          "hydration": 82,
-          "mealDiversity": 78,
-          "nutritionalBalance": 85,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "总体营养状况良好",
-          "水分摄入略有下降，需要注意补充",
-          "可以尝试引入更多种类的食物",
-          "钠摄入控制继续保持良好"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 6,
-    "name": "小丽",
-    "age": 3,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 84,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 80,
-          "fatIntake": 88,
-          "carbsIntake": 82,
-          "fiberIntake": 78,
-          "sugarControl": 82,
-          "sodiumControl": 85,
-          "hydration": 88,
-          "mealDiversity": 80,
-          "nutritionalBalance": 85,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "饮食总体均衡，适合幼儿需求",
-          "很好地避开了鸡蛋过敏原",
-          "可以增加更多蔬菜水果提高膳食纤维",
-          "水分摄入充足"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 86,
-        "categoryScores": {
-          "calorieBalance": 88,
-          "proteinIntake": 82,
-          "fatIntake": 85,
-          "carbsIntake": 85,
-          "fiberIntake": 80,
-          "sugarControl": 85,
-          "sodiumControl": 88,
-          "hydration": 90,
-          "mealDiversity": 82,
-          "nutritionalBalance": 88,
-          "allergenAvoidance": 95
-        },
-        "feedback": [
-          "营养摄入更加均衡",
-          "继续很好地避开鸡蛋过敏原",
-          "膳食纤维摄入有所提高",
-          "水分摄入继续保持良好"
-        ]
-      }
-    ]
-  },
-  {
-    "userId": 7,
-    "name": "小刚",
-    "age": 11,
-    "scores": [
-      {
-        "date": "2023-09-01",
-        "overallScore": 80,
-        "categoryScores": {
-          "calorieBalance": 82,
-          "proteinIntake": 85,
-          "fatIntake": 78,
-          "carbsIntake": 80,
-          "fiberIntake": 75,
-          "sugarControl": 72,
-          "sodiumControl": 78,
-          "hydration": 85,
-          "mealDiversity": 82,
-          "nutritionalBalance": 80,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "营养摄入总体均衡",
-          "可以减少加工食品摄入，降低糖分和钠摄入",
-          "增加更多蔬菜水果提高膳食纤维",
-          "蛋白质摄入良好，有助于生长发育"
-        ]
-      },
-      {
-        "date": "2023-09-02",
-        "overallScore": 83,
-        "categoryScores": {
-          "calorieBalance": 85,
-          "proteinIntake": 88,
-          "fatIntake": 80,
-          "carbsIntake": 82,
-          "fiberIntake": 78,
-          "sugarControl": 75,
-          "sodiumControl": 80,
-          "hydration": 88,
-          "mealDiversity": 85,
-          "nutritionalBalance": 82,
-          "allergenAvoidance": 100
-        },
-        "feedback": [
-          "营养状况有所改善",
-          "蛋白质摄入增加，有助于运动后恢复",
-          "糖分控制仍有提升空间",
-          "饮食多样性有所提高"
-        ]
-      }
-    ]
-  }
-] 
+    }
+]
