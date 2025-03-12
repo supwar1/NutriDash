@@ -203,8 +203,9 @@ const Dashboard: React.FC<DashboardProps> = ({ userData, scoreData, mealData, cu
             </div>
 
             <div className={styles.chartsContainer}>
+                {/* 每周营养评分趋势 - 全宽显示 */}
                 <div className={styles.chartCard}>
-                    <h3>每日营养评分趋势</h3>
+                    <h3>每周营养评分趋势</h3>
                     <div className={styles.chartDescription}>
                         过去7天的营养评分变化趋势，帮助您了解饮食习惯的改善情况
                     </div>
@@ -264,6 +265,7 @@ const Dashboard: React.FC<DashboardProps> = ({ userData, scoreData, mealData, cu
                     </div>
                 </div>
 
+                {/* 饮食行为分析 - 全宽显示 */}
                 {behaviorAnalysis && (
                     <div className={styles.behaviorCard}>
                         <h3>饮食行为分析</h3>
