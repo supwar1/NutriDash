@@ -1,0 +1,437 @@
+.behaviorAnalysis {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.behaviorHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+    position: relative;
+}
+
+.behaviorHeader h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.behaviorHeader h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.userAgeTag {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.behaviorCard {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.behaviorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.behaviorCard h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.behaviorCard h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.behaviorContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.behaviorPeriod {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    background-color: rgba(var(--primary-rgb), 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.behaviorSummary {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--border-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.behaviorSection {
+    margin-bottom: 2rem;
+    background-color: rgba(var(--primary-rgb), 0.02);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.behaviorSection h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.behaviorSection h4::before {
+    content: '📊';
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.mealTimingGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.mealTimingItem {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.mealTimingItem:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.mealTimingHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.mealName {
+    font-weight: 600;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.mealName::before {
+    content: '🍽️';
+    margin-right: 0.5rem;
+}
+
+.consistencyBadge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.highConsistency {
+    background-color: var(--success-color);
+}
+
+.mediumConsistency {
+    background-color: var(--warning-color);
+}
+
+.lowConsistency {
+    background-color: var(--danger-color);
+}
+
+.mealTime {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.mealTime::before {
+    content: '⏰';
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.mealComment {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: rgba(var(--primary-rgb), 0.03);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-light);
+}
+
+.habitsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.habitItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid var(--border-color);
+}
+
+.habitItem:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.habitLabel {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.habitLabel::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.habitValue {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+}
+
+.foodTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.foodTag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background-color: var(--primary-light);
+    color: white;
+    font-size: 0.85rem;
+    transition: transform 0.2s ease;
+}
+
+.foodTag:hover {
+    transform: scale(1.05);
+}
+
+.dislikeTag {
+    background-color: var(--danger-color);
+}
+
+.changesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.improvementsSection,
+.concernsSection {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid var(--border-color);
+}
+
+.improvementsSection:hover,
+.concernsSection:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.improvementsSection h5,
+.concernsSection h5 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-color);
+    position: relative;
+}
+
+.improvementsSection h5::after,
+.concernsSection h5::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.changesList {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.improvementItem,
+.concernItem {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.improvementItem::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.concernItem::before {
+    content: '!';
+    position: absolute;
+    left: 0;
+    color: var(--warning-color);
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgba(var(--warning-rgb), 0.1);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .mealTimingGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .changesContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .behaviorCard {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .behaviorHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .userAgeTag {
+        margin-top: 0.5rem;
+    }
+
+    .behaviorCard {
+        padding: 1.25rem;
+    }
+
+    .behaviorSummary {
+        max-width: 100%;
+    }
+} 

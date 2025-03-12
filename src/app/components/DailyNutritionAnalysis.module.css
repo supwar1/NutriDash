@@ -1,0 +1,412 @@
+.dailyNutritionAnalysis {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.topSectionsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.nutritionSummary, 
+.nutritionComparisonSection {
+    flex: 1;
+    margin-bottom: 0;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.analysisHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+    position: relative;
+}
+
+.analysisHeader h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.analysisHeader h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* 营养摄入与建议对比部分 */
+.nutritionComparisonSection:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nutritionComparisonSection h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.nutritionComparisonSection h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.comparisonTable {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.comparisonHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.comparisonRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.comparisonRow:hover {
+    background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+.comparisonRow:last-child {
+    border-bottom: none;
+}
+
+.comparisonRow:nth-child(odd) {
+    background-color: rgba(var(--primary-rgb), 0.03);
+}
+
+.comparisonRow:nth-child(odd):hover {
+    background-color: rgba(var(--primary-rgb), 0.08);
+}
+
+/* 状态样式 */
+.good {
+    color: var(--success-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.good::before {
+    content: '✓';
+    font-size: 1rem;
+}
+
+.low {
+    color: var(--warning-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.low::before {
+    content: '⚠️';
+    font-size: 0.9rem;
+}
+
+.high {
+    color: var(--danger-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.high::before {
+    content: '⚠️';
+    font-size: 0.9rem;
+}
+
+.slightlyHigh {
+    color: var(--warning-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.slightlyHigh::before {
+    content: '⚠️';
+    font-size: 0.9rem;
+}
+
+.neutral {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.mealSection {
+    margin-bottom: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mealSection:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mealSection h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.mealSection h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.mealCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.mealCard, .hydrationCard {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid var(--border-color);
+}
+
+.mealCard:hover, .hydrationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.mealCard h4, .hydrationCard h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+.mealCard h4::before {
+    content: '🍽️';
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.hydrationCard h4::before {
+    content: '💧';
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.mealCard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mealCard li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.mealCard li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.mealCard li:last-child {
+    border-bottom: none;
+}
+
+.hydrationCard p {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.hydrationCard p::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.nutritionSummary:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nutritionSummary h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--primary-light);
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.nutritionSummary h3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.nutritionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.nutritionItem {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    border: 1px solid var(--border-color);
+}
+
+.nutritionItem:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.nutritionItem span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.nutritionItem strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .topSectionsContainer {
+        flex-direction: column;
+    }
+    
+    .mealCards {
+        grid-template-columns: 1fr;
+    }
+    
+    .nutritionGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .comparisonHeader, .comparisonRow {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .comparisonHeader div, .comparisonRow div {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nutritionGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparisonHeader, .comparisonRow {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+} 

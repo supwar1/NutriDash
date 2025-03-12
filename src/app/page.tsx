@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Dashboard from './components/Dashboard';
 import NutritionAnalysis from './components/NutritionAnalysis';
+import EatingBehaviorAnalysis from './components/EatingBehaviorAnalysis';
+import DailyNutritionAnalysis from './components/DailyNutritionAnalysis';
 import styles from './page.module.css';
 
 // 导入数据
@@ -99,27 +101,38 @@ export default function Home() {
                     仪表板概览
                 </button>
                 <button
-                    className={`${styles.tabButton} ${activeTab === 'analysis' ? styles.activeTab : ''}`}
-                    onClick={() => handleTabChange('analysis')}
+                    className={`${styles.tabButton} ${activeTab === 'daily' ? styles.activeTab : ''}`}
+                    onClick={() => handleTabChange('daily')}
                 >
-                    详细营养分析
+                    今日营养分析
+                </button>
+                <button
+                    className={`${styles.tabButton} ${activeTab === 'behavior' ? styles.activeTab : ''}`}
+                    onClick={() => handleTabChange('behavior')}
+                >
+                    饮食行为分析
                 </button>
             </div>
 
             <div className={styles.content}>
-                {activeTab === 'dashboard' ? (
+                {activeTab === 'dashboard' && (
                     <Dashboard
                         userData={userData}
                         scoreData={userScores}
                         mealData={userMeals}
                         currentDate={currentDate}
                     />
-                ) : (
-                    <NutritionAnalysis
+                )}
+                {activeTab === 'daily' && (
+                    <DailyNutritionAnalysis
                         userData={userData}
-                        scoreData={userScores}
                         mealData={userMeals}
                         currentDate={currentDate}
+                    />
+                )}
+                {activeTab === 'behavior' && (
+                    <EatingBehaviorAnalysis
+                        userData={userData}
                     />
                 )}
             </div>
